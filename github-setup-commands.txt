@@ -1,0 +1,6 @@
+1. git init
+2. git add .
+3. git commit -m "any msg"
+4. git remote add origin https://github.com/pankajshetake07/property-management.git
+5. git push
+6. git push --set-upstream origin master
