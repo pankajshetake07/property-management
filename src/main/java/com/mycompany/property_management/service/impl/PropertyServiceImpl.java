@@ -6,20 +6,16 @@ import com.mycompany.property_management.repository.PropertyRepository;
 import com.mycompany.property_management.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class PropertyServiceImpl implements PropertyService {
-
     @Autowired
     private PropertyRepository propertyRepository;
-
     @Autowired
     private PropertyConverter propertyConverter;
-
     @Override
     public PropertyDTO saveProperty(PropertyDTO propertyDTO) {
         PropertyEntity pe = propertyConverter.convertDTOtoEntity(propertyDTO);
