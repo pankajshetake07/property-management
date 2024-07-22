@@ -19,9 +19,6 @@ public class PropertyEntity {
 //    @Column(name = "PROPERTY_TITLE") //we can change the name of the column by using @Column Annotation
     private String title;
     private String description;
-    private  String OwnerName;
-//    @Column(name = "EMAIL")//same for that also
-    private  String OwnerEmail;
     private  Double price;
     private String address;
 
